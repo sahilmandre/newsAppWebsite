@@ -15,8 +15,8 @@ export class TopHeadlinesComponent implements OnInit {
     this.serviceHttp.topHeadline().subscribe(
       (data) => {
         // Handle data here
+        this.topHeadingDisplayData = data.results;
         console.log(data);
-        this.topHeadingDisplayData = data.articles;
       },
       (error) => {
         // Handle error here

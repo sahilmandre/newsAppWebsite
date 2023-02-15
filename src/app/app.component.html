@@ -1,3 +1,5 @@
+<ngx-loading-bar [color]="'#d94b8d'" [includeSpinner]="false"></ngx-loading-bar>
+
 <div class="">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -45,8 +47,17 @@
 <router-outlet></router-outlet>
 
 <!-- create footer component for this page -->
-<footer class="footer">
-  <div class="container">
-    <p class="text-muted">Samandre &copy; 2023</p>
+<footer class="footer mt-5">
+  <div class="container h-100 footerContainer">
+    <div class="text-center">
+      <p class="footerText">Samandre &copy; 2023</p>
+
+      <p class="footerText">
+        Created with &hearts;
+        <a target="_blank" href="https://portfolio-sahilmandre.vercel.app/"
+          >Sahil Mandre</a
+        >
+      </p>
+    </div>
   </div>
 </footer>

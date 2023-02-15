@@ -107,3 +107,8 @@ body {
   /* scale up on hover  */
   transform: scale(1.1);
 }
+
+.sectionHeight {
+  min-height: 100vh;
+  margin-top: 3rem;
+}

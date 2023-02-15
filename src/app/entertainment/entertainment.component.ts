@@ -16,7 +16,7 @@ export class EntertainmentComponent implements OnInit {
       (data: any) => {
         // Handle data here
         console.log(data);
-        this.entertainmentDisplayData = data.articles;
+        this.entertainmentDisplayData = data.results;
       },
       (error: any) => {
         // Handle error here

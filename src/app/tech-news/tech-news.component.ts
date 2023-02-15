@@ -16,7 +16,7 @@ export class TechNewsComponent implements OnInit {
       (data: any) => {
         // Handle data here
         console.log(data);
-        this.techDisplayData = data.articles;
+        this.techDisplayData = data.results;
       },
       (error) => {
         // Handle error here

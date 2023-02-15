@@ -12,17 +12,11 @@ export class NewapiserviceService {
   }
   constructor(private http: HttpClient) {}
 
-  newsApiUrl =
-    'https://newsapi.org/v2/top-headlines?country=in&apiKey=' +
-    environment.API_KEY;
+  newsApiUrl = `https://newsdata.io/api/1/news?apikey=pub_${environment.API_KEY}&country=in&language=en`;
 
-  techApiUrl =
-    'https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=' +
-    environment.API_KEY;
+  techApiUrl = `https://newsdata.io/api/1/news?apikey=pub_${environment.API_KEY}&country=in&category=technology&language=en`;
 
-  entertainmentApiUrl =
-    'https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=' +
-    environment.API_KEY;
+  entertainmentApiUrl = `https://newsdata.io/api/1/news?apikey=pub_${environment.API_KEY}&country=in&category=entertainment&language=en`;
 
   topHeadline(): Observable<any> {
     return this.http.get(this.newsApiUrl);
